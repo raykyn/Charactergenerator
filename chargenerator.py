@@ -35,13 +35,19 @@ def applytitle(id, title):
                 with open(titlepath + titlename + ".txt", "r") as f:
                     content = f.read()
                     x = content.find(date)
+                    y = content.find(event) #if the date gets changed instead
 
-                if x == -1:
+                if x == -1 and y == -1:
                     with open(titlepath + titlename + ".txt", "a") as f:
                         f.write(newcontent)
-                else:
+                elif y == -1:
                     with open(titlepath + titlename + ".txt", "w") as f:
                         pattern = date + r' = {\n\tholder = \d+\n}\n'
+                        content = re.sub(pattern, newcontent, content)
+                        f.write(content)
+                elif x == -1:
+                    with open(titlepath + titlename + ".txt", "w") as f:
+                        pattern = r'\d{3,4}.\d{1,2}\.\d{1,2} = {'+event+'\n}\n'
                         content = re.sub(pattern, newcontent, content)
                         f.write(content)
         else:
