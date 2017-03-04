@@ -41,7 +41,7 @@ def applytitle(id, title):
                         f.write(newcontent)
                 else:
                     with open(titlepath + titlename + ".txt", "w") as f:
-                        pattern = date + r' = {\n\t.+\n}\n'
+                        pattern = date + r' = {\n\tholder = \d+\n}\n'
                         content = re.sub(pattern, newcontent, content)
                         f.write(content)
         else:
