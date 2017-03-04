@@ -1,0 +1,116 @@
+Start writing characters...
+Writing character Rohaja von Gareth with id 1
+There is no title ['k_almada', '1022.7.15'] for character 1
+There is no title ['k_darpatia', '1022.1.1'] for character 1
+Writing character Brin von Gareth with id 2
+There is no title ['k_almada', '1014.7.15'] for character 2
+There is no title ['k_darpatia', '1014.1.1'] for character 2
+There is no title ['d_baliho', '1014.1.1'] for character 2
+There is no title ['c_baliho', '1014.1.1'] for character 2
+Writing character Emer Bennain with id 3
+Writing character Selindian Hal von Gareth with id 4
+Writing character Yppolita von Gareth with id 5
+Writing character Danos von Luring with id 6
+Writing character Rondger von Luring with id 7
+Writing character Irminde vom Berg with id 8
+Writing character Firine von Luring with id 9
+Writing character Praiodan von Luring with id 10
+Writing character Rumhilde von Wetterfels with id 11
+Writing character Drego von Luring with id 12
+Writing character Ederlinde von Luring with id 13
+Writing character Lechmin Rondara von Luring with id 14
+Writing character Nimmgalf von Hirschfurten with id 15
+Writing character Erlan von Zankenblatt with id 16
+Writing character Tsaburga von Waldfang with id 17
+Writing character Siegeshart von Ehrenstein with id 18
+Writing character Olruk von Eslamsgrund with id 19
+Writing character Yendor Limpurg with id 20
+Writing character Malepartus von Helburg with id 21
+Writing character Haduwulf von Falkenstein with id 22
+Writing character Tsafried von Waldfang with id 23
+Writing character Tsamuel von Waldfang with id 24
+Writing character Tsaiana von Waldfang with id 25
+Writing character Efferdane von Ehrenstein with id 26
+Writing character Thalmare von Linara with id 27
+Writing character Sari von Linara with id 28
+Writing character Ailyne Nemrod with id 29
+Writing character Allerich von Falkenwind with id 30
+Writing character Maline von Hohentann with id 31
+Writing character Elgor Leomar von Hohentann with id 32
+Writing character Allechandriel Quellentanz with id 33
+Writing character Sequin zu Gesselingen with id 34
+Writing character Treumunde Rotha von Eychgras with id 35
+Writing character Werdomar von Quintian-Quandt with id 36
+Writing character Geismar von Quintian-Quandt with id 37
+Writing character Thuronia von Quintian-Quandt with id 38
+Writing character Answart von Quintian-Quandt with id 39
+Writing character Tanira von Natzungen with id 40
+Writing character Alrik von Hartsteen with id 41
+Writing character Alrik von Gareth with id 42
+Writing character Irian Vierock with id 43
+Writing character Ingramm Zweihammer with id 44
+Writing character Ilkor Zweihammer with id 45
+Writing character Igrolosch Zweihammer with id 46
+Writing character Luidor von Hartsteen with id 47
+Writing character Thalionmel von Erlenstamm with id 48
+Writing character Rohajan von Erlenstamm with id 49
+Writing character Alissa von Erlenstamm with id 50
+Writing character Elea von Ruchin with id 51
+Writing character Angreto von Ruchin with id 52
+Writing character Iriane von Ruchin with id 53
+Writing character Tabur von Ochs with id 54
+Writing character Anaxios von Ochs with id 55
+Writing character Wolfaran von Ochs with id 56
+Writing character Yadvige von Hasenfeld with id 57
+Writing character Thargrîn von Arpitz with id 58
+Writing character Felian von Quastenbroich with id 59
+Writing character Faralda von Hasenfeld with id 60
+Writing character Ardo von Keilholtz with id 61
+Writing character Palinor vom Greifener Land with id 62
+Writing character Tyrian von Schelentorff with id 63
+Writing character Gerbald von Reiffenberg with id 64
+Writing character Hilla Bernigandh with id 65
+Writing character Renzi Bernigandh with id 66
+Writing character Avrok von Bredenhag with id 67
+Writing character Irmenella von Wertlingen with id 68
+Writing character Otwin von Greifenhorst with id 69
+Writing character Gerion von Greifenhorst with id 70
+Writing character Tilldan von Nebelstein with id 71
+Writing character Fürchtewol von Eisslingern with id 72
+Writing character Herdan von Keilholtz with id 73
+Writing character Karminia von Radulfshausen with id 74
+Writing character Duana von Espengrund with id 75
+Writing character Gunilde von Dergelstein with id 76
+Writing character Jasline von Dergelstein with id 77
+Writing character Bernhelm Adersin with id 78
+Writing character Fredo Adersin with id 79
+Writing character Gaismar Adersin with id 80
+Writing character Greifwin von Keilholtz with id 81
+Writing character Trär von Breitenquell with id 82
+Writing character Thorn von Breitenquell with id 83
+Writing character Duridanya von Greifenberg with id 84
+Writing character Ucurian von Rabenmund with id 85
+Writing character Amrei von Rabenmund with id 86
+Writing character Zordian von Tikaris with id 87
+Writing character Korhilda von Sturmfels with id 88
+Writing character Alrik von Sturmfels with id 89
+Writing character Wolfaran von Ochs with id 90
+Writing character Leobrecht von Ochs with id 91
+Writing character Leobur von Ochs with id 92
+Writing character Gidiane von Waltern with id 93
+Writing character Grimhild von Waltern with id 94
+Writing character Geshla Gizien'Chul with id 95
+Writing character Ruffina Daren'Far with id 96
+Writing character Praiosmar Daren'Far with id 97
+Writing character Rimiona Daren'Far with id 98
+Writing character Thorondir Daren'Far with id 99
+Writing character Simold Fir'Enock with id 100
+Writing character Kasim Fir'Enock with id 101
+Writing character Ariana Fir'Enock with id 102
+Writing character Siyandor Fir'Enock with id 103
+Writing character Eslam Beshir a Danal with id 104
+Writing character Martok Beshir a Danal with id 105
+Writing character Rondrigan Paligan with id 106
+Writing character Maia Paligan with id 107
+Writing character Timshal Paligan with id 108
+Writing character Hilberian vom Grossen Fluss with id 109
