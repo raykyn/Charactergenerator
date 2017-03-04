@@ -24,23 +24,7 @@ def applytitle(id, title):
     print(title)
     
     try:
-        if len(title) == 1:
-            event = "\n\tholder = " + id
-            newcontent = title_starts + " = {" + event + "\n}\n"
-             
-            with open(titlepath + title[0] + ".txt", "r") as f:
-                content = f.read()
-                x = content.find(title_starts)
-                
-            if x == -1:
-                with open(titlepath + title + ".txt", "a") as f:
-                    f.write(newcontent)
-            else:
-                with open(titlepath + title + ".txt", "w") as f:
-                    re.sub(title_starts + r' = {\n\t.+\n}\n', newcontent, content)
-                    f.write(content)
-                    
-        elif len(title) == 2:
+        if len(title) == 2:
                 titlename = title[0]
                 date = title[1]
                 
@@ -62,11 +46,11 @@ def applytitle(id, title):
                         f.write(content)
         else:
             with open("log.txt", mode="a", encoding="utf8") as log:
-                log.write("Could not set title {} for character {}\n".format(title, id))
+                log.write("Could not set title {} for character {}. Check syntax in .csv file!\n".format(title, id))
                 
     except:
         with open("log.txt", mode="a", encoding="utf8") as log:
-                log.write("There is no title {} for character {}\n".format(title, id))
+                log.write("There is no title {} for character {}.\n".format(title, id))
 
 def readCSV(csvfile):
     with open(csvfile) as f:

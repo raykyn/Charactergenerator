@@ -1,12 +1,12 @@
 Start writing characters...
 Writing character Rohaja von Gareth with id 1
-There is no title ['k_almada', '1022.7.15'] for character 1
-There is no title ['k_darpatia', '1022.1.1'] for character 1
+There is no title ['k_almada', '1022.7.15'] for character 1.
+There is no title ['k_darpatia', '1022.1.1'] for character 1.
 Writing character Brin von Gareth with id 2
-There is no title ['k_almada', '1014.7.15'] for character 2
-There is no title ['k_darpatia', '1014.1.1'] for character 2
-There is no title ['d_baliho', '1014.1.1'] for character 2
-There is no title ['c_baliho', '1014.1.1'] for character 2
+There is no title ['k_almada', '1014.7.15'] for character 2.
+There is no title ['k_darpatia', '1014.1.1'] for character 2.
+There is no title ['d_baliho', '1014.1.1'] for character 2.
+There is no title ['c_baliho', '1014.1.1'] for character 2.
 Writing character Emer Bennain with id 3
 Writing character Selindian Hal von Gareth with id 4
 Writing character Yppolita von Gareth with id 5
