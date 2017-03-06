@@ -4,6 +4,8 @@
 
 import csv
 import configparser
+import glob
+import os
 import re
 import sys
 
@@ -19,9 +21,6 @@ TITLEDEF = ""
 def applytitle(id, title):
     title_starts = TITLEDEF
     titlepath = PATH_TO_TITLES
-    
-    print(id)
-    print(title)
     
     try:
         if len(title) == 2:
@@ -69,13 +68,27 @@ def readCSV(csvfile):
 def writePersons(persons):
     charfile = "{}\{}".format(PATH_TO_CHARS, CHARFILE)
     dynastyfile = "{}\{}".format(PATH_TO_DYNASTIES, DYNFILE)
-    with open(charfile, mode='w', encoding="utf8") as chars, open(dynastyfile, mode='w', encoding='utf8') as dyn:
+    with open(charfile, mode='w', encoding="utf8") as chars:
         
         with open("log.txt", mode="w", encoding="utf8") as log:
             log.write("Start writing characters...\n")
         
         dynastydict = {}
-        dynastycounter = 1
+        
+        # build dictionary for dynasties
+        highest_id = 0
+        for filename in glob.glob(os.path.join(PATH_TO_DYNASTIES,'*.txt')):
+            with open(filename, mode="r", encoding="utf8") as f:
+                content = f.read()
+                match = re.findall('(\d+).*?\n.*?name\s?=\s?"(.+?)"', content)
+                for find in match:
+                    ID = find[0]
+                    dynasty = find[1]
+                    dynastydict[dynasty] = (ID, "")
+                    if int(ID) > highest_id:
+                        highest_id = int(ID)
+        dynastycounter = highest_id
+        
         for person in persons:
             
             with open("log.txt", mode="a", encoding="utf8") as log:
@@ -89,14 +102,17 @@ def writePersons(persons):
             chars.write("\n\treligion = %s \n\tculture = %s"%(person["religion"],person["culture"]))
             
             if len(person["dynasty"]) >= 1:
-                if person["dynasty"] not in dynastydict:
-                    dynastydict[person["dynasty"]] = (dynastycounter,person["culture"])
-                    dyn.write("%s = {\n\tname = \"%s\""%(dynastycounter,person["dynasty"]))
-                    dyn.write("\n\tculture = %s"%(person["culture"]))
-                    dyn.write("\n\tused_for_random = no\n}\n\n")
-                    dynastycounter += 1
-                chars.write("\n\tdynasty = %s"%(dynastydict[person["dynasty"]][0]))
-                
+                with open(dynastyfile, mode='a', encoding='utf8') as dyn:
+                    if person["dynasty"] not in dynastydict:
+                        dynastycounter += 1
+                        dynastydict[person["dynasty"]] = (dynastycounter,person["culture"])
+                        dyn.write("%s = {\n\tname = \"%s\""%(str(dynastycounter),person["dynasty"]))
+                        dyn.write("\n\tculture = %s"%(person["culture"]))
+                        dyn.write("\n\tused_for_random = no\n}\n\n")
+                        chars.write("\n\tdynasty = %s"%(str(dynastycounter)))
+                    else:
+                        this_id = dynastydict[person["dynasty"]][0]
+                        chars.write("\n\tdynasty = %s"%(str(this_id)))
                 
             if len(person["father"]) >= 1:
                 chars.write("\n\tfather = %s"%(person["father"]))
